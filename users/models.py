@@ -1,4 +1,5 @@
 from django.db import models
+
 from django.contrib.auth.models import User
 from PIL import Image
 
@@ -9,7 +10,7 @@ class Profile(models.Model):
 
 
 #resizing automatically the profile pic
-
+"""
     def __str__(self):
       return f'{self.user.username}profile'
 
@@ -21,3 +22,4 @@ class Profile(models.Model):
         output_size = (300, 300)
         img.thumbnail(output_size)
         img.save(self.image.path)
+"""
